@@ -52,7 +52,10 @@ const randomBtn = document.querySelector(".random-btn");
 let currentItem = 2;
 
 // load initial item
-window.addEventListener("COMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function () {
     const item = reviews[currentItem];
     img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
 });
